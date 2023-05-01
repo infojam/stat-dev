@@ -21,9 +21,6 @@
 	let currentScore = 0;
 	let  grade = "No Grade";
 function getGrade(points){
-
-
-
 if(points >= "182" && points <= "217")
 {
 	grade = "Scale 1a";
@@ -100,7 +97,6 @@ else
 {
 	grade = "No Grade";
 }
-//return grade;
 }
 
 
