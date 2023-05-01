@@ -90,7 +90,7 @@
     
     <SideNav style="background-color: #262626;" bind:isOpen={isSideNavOpen}>
       <SideNavItems>
-        <div style="border-left: 4px solid #0D62FE;background-color: #393939;padding-top: 12px;padding-bottom:12px;padding-left:12px;background-color: #393939;color:white;"><strong> <div style="padding-bottom: 5px;">City of York Council</div></strong>Flexible Learning</div>
+        <div style="border-left: 4px solid #0D62FE;background-color: #393939;padding-top: 12px;padding-bottom:12px;padding-left:12px;background-color: #393939;color:white;"><strong> <div style="padding-bottom: 5px;">City of York Council</div></strong>Job Evaluation</div>
         <SideNavLink text="Link 2" />
         <SideNavLink text="Link 3" />
         <SideNavMenu text="Menu">
