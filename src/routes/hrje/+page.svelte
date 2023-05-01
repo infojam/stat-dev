@@ -228,23 +228,26 @@ else
 				
 				<dl>
 					  <dt style="font-size:0.7rem;color:gray;">Panel Member</dt>
-					  <dd style="padding-bottom: 1rem;">J Frederick</dd>
+					  <dd style="padding-bottom: 1rem;">Kane Linnett</dd>
 					  <dt style="font-size:0.7rem;color:gray;">Grade</dt>
 					  <dd style="padding-bottom: 1rem;">{grade}</dd>
 					<dt style="font-size:0.7rem;color:gray;">Score</dt>
 					  <dd style="padding-bottom: 1rem;">{currentScore}</dd>
 					<dt style="font-size:0.7rem;color:gray;">Panel Date</dt>
-					  <dd style="padding-bottom: 1rem;">08/08/2022</dd>
+					  <dd style="padding-bottom: 1rem;">01/05/2023</dd>
 					<!-- <dt>Status</dt>
 					  <dd style="padding-bottom: 1rem;"><strong>INCOMPLETE</strong></dd> -->
 					<dt>Status</dt>
 					<dd>
 	<Select light  on:change={(e) => console.log("value", e.detail)}>
-	  <SelectItem value="INCOMPLETE" />
-	  <SelectItem value="2.1" />
-	  <SelectItem value="2.2" />
-	  <SelectItem value="2.3" />
-	  <SelectItem value="g100" />
+	  <SelectItem value="New Evaluation" />
+	  <SelectItem value="In Progress" />
+	  <SelectItem value="Pencil Score" />
+	  <SelectItem value="Awaiting Authorisation" />
+	  <SelectItem value="Provisional" />
+	  <SelectItem value="Unable to Score" />
+	  <SelectItem value="Manager Approved" />
+	  <SelectItem value="Manager Rejected" />
 	</Select>
 	</dd>
 				</dl>
@@ -298,7 +301,7 @@ else
 										{/each}
 									</Select>
 									<br />
-									<TextArea labelText="Description" value={section.detail_text} />
+									<TextArea labelText="Description" value={section.detail_text} readonly/>
 									<div style="display: flex;align-items:right;justify-content:right;padding-top:1rem;">
 										<Button icon={ArrowRight} on:click={() => openNext(i)}>Next</Button>
 									</div>
