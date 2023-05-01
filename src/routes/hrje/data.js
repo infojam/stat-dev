@@ -3,7 +3,7 @@ let sections = [
         id:"8f99ee50-ef40-4e76-8ab7-4261927d0e25",
         title: 'Creativity & Innovation',
         title_short: "C&I",
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         open: true,
         questions:[
@@ -79,7 +79,7 @@ let sections = [
         id:"4fd68ae3-ef30-457b-b7c8-4814dcc52509",
         title: 'Contacts & Relationships',
         title_short: "C&R",
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         open: false,
         questions:[
@@ -164,7 +164,7 @@ let sections = [
         title: 'Discretion',
         title_short: "DISC",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"9feb4943-e8a3-4fe6-8fa7-7766622a44c5",
@@ -232,7 +232,7 @@ let sections = [
         title: 'Consequences',
         title_short: "CONS",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"cfc2ab0a-8092-4bd6-88f8-a67a1d547cce",
@@ -292,7 +292,7 @@ let sections = [
         title: 'Resources',
         title_short: "RESO",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"9601c773-e6d6-4ee1-8963-50112590b633",
@@ -352,7 +352,7 @@ let sections = [
         title: 'Working Demands',
         title_short: "WODE",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"f480d57f-8af8-455a-8ee0-59a60178e648",
@@ -412,7 +412,7 @@ let sections = [
         title: 'Physical Demands',
         title_short: "PHYD",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"b57ba1c8-822d-4df7-b697-77b09961c378",
@@ -464,7 +464,7 @@ let sections = [
         title: 'Working Conditions',
         title_short: "WOCO",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"3bb35a42-d904-4002-9283-a8a4b9642b69",
@@ -516,7 +516,7 @@ let sections = [
         title: 'Working Context',
         title_short: "WOCT",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"4f7b413d-a9b9-4d15-b46d-68f586390cef",
@@ -568,7 +568,7 @@ let sections = [
         title: 'Knowledge & Skills',
         title_short: "K&SK",
         open: false,
-        detail_text:"DEFAULT",
+        detail_text:"",
         section_value:"",
         questions:[
             {   id:"ff96f76a-ab7d-4f1c-a9b7-bd9f99a0546e",

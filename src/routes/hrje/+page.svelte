@@ -19,6 +19,90 @@
 	import { fade } from 'svelte/transition';
 
 	let currentScore = 0;
+	let  grade = "No Grade";
+function getGrade(points){
+
+
+
+if(points >= "182" && points <= "217")
+{
+	grade = "Scale 1a";
+}
+else if(points >= "218" && points <= "257")
+{
+	grade = "Scale 1b";
+}
+else if(points >= "258" && points <= "298")
+{
+	grade = "Scale 1c";
+}
+else if(points >= "299" && points <= "338")
+{
+	grade = "Scale 2";
+}
+else if(points >= "339" && points <= "379")
+{
+	grade = "Scale 3";
+}
+else if(points >= "380" && points <= "419")
+{
+	grade = "Scale 4";
+}
+else if(points >= "420" && points <= "461")
+{
+	grade = "Scale 5";
+}
+else if(points >= "462" && points <= "496")
+{
+	grade = "Scale 6";
+}
+else if(points >= "497" && points <= "533")
+{
+	grade = "SO1";
+}
+else if(points >= "534" && points <= "558")
+{
+	grade = "SO2";
+}
+else if(points >= "559" && points <= "585")
+{
+	grade = "PO1";
+}
+else if(points >= "586" && points <= "610")
+{
+	grade = "PO2";
+}
+else if(points >= "611" && points <= "637")
+{
+	grade = "PO3";
+}
+else if(points >= "638" && points <= "662")
+{
+	grade = "PO4";
+}
+else if(points >= "663" && points <= "689")
+{
+	grade = "PO5";
+}
+else if(points >= "690" && points <= "714")
+{
+	grade = "PO6";
+}
+else if(points >= "715" && points <= "799")
+{
+	grade = "PO7";
+}
+else if(points >= "800" && points <= "948")
+{
+	grade = "PO8";
+}
+else
+{
+	grade = "No Grade";
+}
+//return grade;
+}
+
 
 	function changeScore() {
 		currentScore = 0;
@@ -36,6 +120,7 @@
 				}
 			}
 		}
+		getGrade(currentScore);
 	}
 
 	async function doPost(n) {
@@ -149,7 +234,7 @@
 					  <dt style="font-size:0.7rem;color:gray;">Panel Member</dt>
 					  <dd style="padding-bottom: 1rem;">J Frederick</dd>
 					  <dt style="font-size:0.7rem;color:gray;">Grade</dt>
-					  <dd style="padding-bottom: 1rem;">8</dd>
+					  <dd style="padding-bottom: 1rem;">{grade}</dd>
 					<dt style="font-size:0.7rem;color:gray;">Score</dt>
 					  <dd style="padding-bottom: 1rem;">{currentScore}</dd>
 					<dt style="font-size:0.7rem;color:gray;">Panel Date</dt>
@@ -195,11 +280,9 @@
 						<svelte:fragment slot="title">
 							<span style="display: flex;justify-content: space-between;">
 								{#if section.section_value === ''}
-									<span
-										><Tag size="sm" type="cool-gray" style="margin-right: 1rem;"
-											>{section.section_value}</Tag
-										>{section.title}</span
-									>
+									<span>
+										<Tag size="sm" type="cool-gray" style="margin-right: 1rem;">{section.section_value}</Tag>{section.title}
+									</span>
 								{:else}
 									<span
 										><Tag size="sm" type="green" style="margin-right: 1rem;">{section.section_value}</Tag
