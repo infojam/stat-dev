@@ -1,5 +1,6 @@
 <script>
     import "carbon-components-svelte/css/white.css";
+    import {navigation} from '../stores/stores.js'
     //import "carbon-components-svelte/css/g10.css";
      import {
          Header,
@@ -27,7 +28,7 @@
      import SettingsAdjust from "carbon-icons-svelte/lib/SettingsAdjust.svelte";
       import UserAvatarFilledAlt from "carbon-icons-svelte/lib/UserAvatarFilledAlt.svelte";
     
-      let isSideNavOpen = true;
+      let isSideNavOpen = navigation.isOpen;
       let isOpen1 = false;
       let isOpen2 = false;
     
@@ -90,13 +91,13 @@
     
     <SideNav style="background-color: #262626;" bind:isOpen={isSideNavOpen}>
       <SideNavItems>
-        <div style="border-left: 4px solid #0D62FE;background-color: #393939;padding-top: 12px;padding-bottom:12px;padding-left:12px;background-color: #393939;color:white;"><strong> <div style="padding-bottom: 5px;">City of York Council</div></strong>Job Evaluation</div>
+        <div style="border-left: 4px solid #0D62FE;background-color: #393939;padding-top: 12px;padding-bottom:12px;padding-left:12px;background-color: #393939;color:white;"><strong> <div style="padding-bottom: 5px;">City of York Council</div></strong>{navigation.nav[0].name}</div>
         <SideNavLink text="Link 2" />
         <SideNavLink text="Link 3" />
-        <SideNavMenu text="Menu">
-          <SideNavMenuItem href="/" text="Link 1" />
-          <SideNavMenuItem href="/" text="Link 2" />
-          <SideNavMenuItem href="/" text="Link 3" />
+        <SideNavMenu text="Reports">
+          <SideNavMenuItem href="/" text="Activity" />
+          <SideNavMenuItem href="/" text="Usage" />
+          <SideNavMenuItem href="/" text="Data" />
         </SideNavMenu>
       </SideNavItems>
     </SideNav>
