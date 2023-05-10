@@ -1,3 +1,9 @@
+```
+npm run dev -- --host 0.0.0.0
+```
+
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
@@ -32,6 +38,11 @@ To create a production version of your app:
 ```bash
 npm run build
 ```
+
+
+
+
+
 
 You can preview the production build with `npm run preview`.
 

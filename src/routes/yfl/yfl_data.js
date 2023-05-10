@@ -1,16 +1,16 @@
 let sections = [
     { 
         id:"8f99ee50-ef40-4e76-8ab7-4261927d0e25",
-        title: 'Creativity & Innovation',
+        title: 'ANDY MARSDEN',
         title_short: "C&I",
         detail_text:"",
         section_value:"",
         open: true,
-        questions:[
+        notes:[
             {   id:"d071f920-df37-4786-be44-8d53d59ef661",
                 order:1,
                 type:"dropdown",
-                text: 'Creativity & Innovation',
+                text: 'ANDY MARSDEN',
                 
                 options:[
                     {
@@ -77,7 +77,7 @@ let sections = [
     },
     {
         id:"4fd68ae3-ef30-457b-b7c8-4814dcc52509",
-        title: 'Contacts & Relationships',
+        title: 'MIKEY LEWIS',
         title_short: "C&R",
         detail_text:"",
         section_value:"",
