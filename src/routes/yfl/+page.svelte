@@ -19,7 +19,7 @@
 	import Edit from "carbon-icons-svelte/lib/Edit.svelte";
 	import ProjectHeader from '../../components/project_header.svelte';
 	import { fade } from 'svelte/transition';
-
+	import { Breadcrumb, BreadcrumbItem } from 'carbon-components-svelte';
 	let currentScore = 0;
 	let grade = 'No Grade';
 
@@ -73,7 +73,17 @@
 </script>
 
 <div>
-	<ProjectHeader />
+	<p style="font-size: 32px;">
+		<!-- <span style="font-weight: 300;">(4572)</span> -->
+		<span style="font-weight: 300;">Richard</span>
+		<span>Church</span>
+	
+	</p>
+	
+	<Breadcrumb noTrailingSlash>
+		<BreadcrumbItem>Acomb</BreadcrumbItem>
+		<BreadcrumbItem>4th May, Thu AM</BreadcrumbItem>
+	</Breadcrumb>
 	<br /><br />
 </div>
 <div class="bootstrap-wrapper grayband">
