@@ -114,7 +114,7 @@
 				<Tile light style="box-shadow: 0px 2px 2px #E3E3E3;">
 					<h6 style="padding-bottom:10px ;">Additional Documentation</h6>
 					<ul>
-						<li><Link>2020 GLPC Schema</Link></li>
+						<li><Link>Link to useful info</Link></li>
 					</ul>
 				</Tile>
 			</div>
