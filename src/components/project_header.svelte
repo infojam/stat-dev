@@ -3,9 +3,9 @@
 
 	import { Breadcrumb, BreadcrumbItem } from 'carbon-components-svelte';
 
-	let name = 'Tree Officer';
-	let category = 'Legal Services';
-	let sub_category = 'Finance';
+	export let name = 'Tree Officer';
+	export let category = 'Legal Services';
+	export let sub_category = 'Finance';
 
 	function firstWord(word) {
 		let _name = word.split(' ');
