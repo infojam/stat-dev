@@ -1,11 +1,12 @@
 <script>
 	import ProjectHeader from '../../../components/project_header.svelte';
-
+  import Launch from 'carbon-icons-svelte/lib/Launch.svelte';
     import {
 		Accordion,
 		AccordionItem,
 		ComboBox,
 		TextArea,
+    DataTable,
 		Tile,
         Tab,
         Tabs,
@@ -227,7 +228,47 @@
 
 
                       </TabContent>
-                      <TabContent>boom</TabContent>
+                      <TabContent>
+                        
+                        <DataTable
+  headers={[
+    { key: "name", value: "Title" },
+    { key: "protocol", value: "Added by" },
+    { key: "rule", value: "Attachment" },
+  ]}
+  rows={[
+    {
+      id: "a",
+      name: "Job Description",
+      protocol: "Kane Linnet",
+      rule: "tree_officer.pdf",
+    },
+    {
+      id: "b",
+      name: "Email from richard",
+      protocol: "Don Draper",
+
+      rule: "20232507.msg",
+    }
+  ]}
+>
+  <svelte:fragment slot="cell-header" let:header>
+      {header.value}
+  </svelte:fragment>
+  <svelte:fragment slot="cell" let:row let:cell>
+    {#if cell.key === "rule"}
+      <Link
+        icon={Launch}
+        href="https://en.wikipedia.org/wiki/Round-robin_DNS"
+        target="_blank">{cell.value}</Link
+      >
+    {:else}
+      {cell.value}
+    {/if}
+  </svelte:fragment>
+</DataTable>
+
+                      </TabContent>
                       <TabContent>Content 3</TabContent>
                     </svelte:fragment>
                   </Tabs></Tile> 
