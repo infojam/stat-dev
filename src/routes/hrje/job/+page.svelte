@@ -69,43 +69,87 @@
 </TooltipDefinition>
         </th>
         <th class="score_head">
-            DIS
-        </th>
-        <th class="score_head">
-            C&I
-        </th>
-        <th class="score_head">
-            C&R
-        </th>
-        <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Dispersal"
+          >
             DIP
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Creativity & Innovation"
+          >
+            C&I
+          </TooltipDefinition>
+        </th>
+        <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Contacts & Relationships"
+          >
+            C&R
+          </TooltipDefinition>
+        </th>
+        <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Discretion"
+          >
+            DIS
+          </TooltipDefinition>
+        </th>
+        <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Consequences"
+          >
             CON
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Resources"
+          >
             RES
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Working Demands"
+          >
             WDS
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Physical Demands"
+          >
             PDS
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Working Conditions"
+          >
             WCS
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Working Context"
+          >
             WCX
+          </TooltipDefinition>
         </th>
         <th class="score_head">
+            <TooltipDefinition
+            tooltipText="Knowledge & Skills"
+          >
             K&S
+          </TooltipDefinition>
         </th>
         <th class="score_head">
-           TOT
+           TOTAL
         </th>
         <th class="score_head">
-            GRA
+            GRADE
          </th>
     </thead>
 
