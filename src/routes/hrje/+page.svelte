@@ -99,7 +99,7 @@ else
 }
 }
 
-
+//v
 	function changeScore() {
 		currentScore = 0;
 		for (let index = 0; index < sections.length; index++) {
@@ -161,6 +161,20 @@ else
 	//TODO this seems messy
 	// @ts-ignore
 	function scoreChange(e, q_id, o) {
+
+//TODO
+/*BUG
+
+Not resetting to 0 if changed from none 0
+
+
+if prev score != 0 && current score = 0
+
+
+////not fixed 2507
+*/
+
+
 		if (e != 0) {
 			for (let index = 0; index < sections.length; index++) {
 				sections[index].open = false;
