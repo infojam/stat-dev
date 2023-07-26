@@ -15,7 +15,7 @@
 	import { sections } from './data.js';
 	import { Tag } from 'carbon-components-svelte';
 	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
-	import ProjectHeader from '../../components/project_header.svelte';
+	import ProjectHeader from '../../../components/project_header.svelte';
 	import { fade } from 'svelte/transition';
 
 	let currentScore = 0;

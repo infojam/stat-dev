@@ -17,7 +17,7 @@
 	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
 	import AlignBoxBottomCenter from "carbon-icons-svelte/lib/AlignBoxBottomCenter.svelte";
 	import Edit from "carbon-icons-svelte/lib/Edit.svelte";
-	import ProjectHeader from '../../components/project_header.svelte';
+	import ProjectHeader from '../../../components/project_header.svelte';
 	import { fade } from 'svelte/transition';
 	import { Breadcrumb, BreadcrumbItem } from 'carbon-components-svelte';
 	let currentScore = 0;

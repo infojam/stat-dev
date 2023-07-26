@@ -1,5 +1,5 @@
 <script>
-	import ProjectHeader from '../../../components/project_header.svelte';
+	import ProjectHeader from '../../../../components/project_header.svelte';
   import Launch from 'carbon-icons-svelte/lib/Launch.svelte';
     import {
 		Accordion,

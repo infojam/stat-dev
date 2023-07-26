@@ -1,6 +1,6 @@
 <script>
     import "carbon-components-svelte/css/white.css";
-    import {navigation} from '../stores/stores.js'
+    import {navigation} from '../../stores/stores.js'
     //import "carbon-components-svelte/css/g10.css";
      import {
          Header,
