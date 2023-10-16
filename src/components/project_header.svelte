@@ -6,7 +6,7 @@
 	export let name = 'Tree Officer';
 	export let category = 'Legal Services';
 	export let sub_category = 'Finance';
-
+	export let job_id = '4572';
 	function firstWord(word) {
 		let _name = word.split(' ');
 		return _name[0];
@@ -29,7 +29,7 @@
 </script>
 
 <p style="font-size: 32px;">
-	<span style="font-weight: 300;">(4572)</span>
+	<span style="font-weight: 300;">({job_id})</span>
 	<span style="font-weight: 300;">{firstWord(name)}</span>
 	<span>{subsequentWord(name)}</span>
 

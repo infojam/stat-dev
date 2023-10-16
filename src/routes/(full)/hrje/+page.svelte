@@ -10,6 +10,7 @@
 		Button,
 		Link,
 		Select,
+		Modal,
 		SelectItem,
 		ButtonSet
 	} from 'carbon-components-svelte';
@@ -19,6 +20,8 @@
 	import ProjectHeader from '../../../components/project_header.svelte';
 	import { fade } from 'svelte/transition';
 	import { Edit } from 'carbon-icons-svelte';
+
+let open = false;
 
 	let currentScore = 0;
 	let  grade = "No Grade";
@@ -329,7 +332,7 @@ if prev score != 0 && current score = 0
 									<br />
 									<TextArea labelText="Description" value={section.detail_text} readonly/>
 									<div style="display: flex;align-items:right;justify-content:right;padding-top:1rem; gap: 10px;">
-										<Button icon={Edit}>Add Comment</Button> <Button icon={ArrowRight} on:click={() => openNext(i)}>Next</Button>
+										<Button on:click={() => open=true} icon={Edit}>Add Comment</Button> <Button icon={ArrowRight} on:click={() => openNext(i)}>Next</Button>
 									</div>
 								</div>
 							</div>  
@@ -344,5 +347,18 @@ if prev score != 0 && current score = 0
 		</div>
 	</div>
 </div>
+
+<Modal
+  bind:open
+  modalHeading="Add comment"
+  primaryButtonText="Confirm"
+  secondaryButtonText="Cancel"
+  on:click:button--secondary={() => (open = false)}
+  on:open
+  on:close
+  on:submit
+>
+<TextArea labelText="Comment" />
+</Modal>
 
 
