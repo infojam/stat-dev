@@ -3,6 +3,7 @@
   import Launch from 'carbon-icons-svelte/lib/Launch.svelte';
     import {
 		Accordion,
+    Tooltip,
 		AccordionItem,
 		ComboBox,
 		TextArea,
@@ -189,7 +190,11 @@
         <tr>
             <td style="padding-right: 10px;">J Fred...</td>
             <td> <Tag size="sm" type="green">4</Tag></td>
-            <td> <Tag size="sm" type="green">4</Tag></td>
+            <td style="background-color: yellow;"> <Tag size="sm" type="green">  <TooltipDefinition
+              tooltipText="A really interesting note"
+            >
+              4
+            </TooltipDefinition></Tag></td>
             <td> <Tag size="sm" type="green">4</Tag></td>
             <td> <Tag size="sm" type="green">4</Tag></td>
             <td> <Tag size="sm" type="green">4</Tag></td>

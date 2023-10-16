@@ -253,11 +253,10 @@ if prev score != 0 && current score = 0
 					<!-- <dt>Status</dt>
 					  <dd style="padding-bottom: 1rem;"><strong>INCOMPLETE</strong></dd> -->
 					<dt>Status</dt>
-					<dd>
+					<dd style="padding-bottom: 20px;">
 	<Select light  on:change={(e) => console.log("value", e.detail)}>
 	  <SelectItem value="New Evaluation" />
 	  <SelectItem value="In Progress" />
-	  <SelectItem value="Pencil Score" />
 	  <SelectItem value="Awaiting Authorisation" />
 	  <SelectItem value="Provisional" />
 	  <SelectItem value="Unable to Score" />
@@ -265,6 +264,15 @@ if prev score != 0 && current score = 0
 	  <SelectItem value="Manager Rejected" />
 	</Select>
 	</dd>
+	<dt>Overall Outcome</dt>
+	<dd>
+<Select light  on:change={(e) => console.log("value", e.detail)}>
+<SelectItem value="In Progress" />
+<SelectItem value="Grade increased" />
+<SelectItem value="Grade Decreased" />
+<SelectItem value="No Change" />
+</Select>
+</dd>
 				</dl>
 				<div style="display: flex;align-items:right;justify-content:right;padding-top:1rem;">
 				<Button on:click={() => persisit()}>Save</Button>
@@ -274,7 +282,8 @@ if prev score != 0 && current score = 0
 				<Tile light style="box-shadow: 0px 2px 2px #E3E3E3;">
 				<h6 style="padding-bottom:10px ;">Additional Documentation</h6>
 				<ul>
-				<li><Link>2020 GLPC Schema</Link></li>
+				<li><Link href="https://github.com/infojamjames/STAT_HRJE/files/12868692/Local_Conventions_GLPC_scheme_Aug_21.pdf">2021 GLPC Scheme</Link></li>
+				<li><Link href="https://github.com/infojamjames/STAT_HRJE/files/12868711/FINAL.GLPC.JE.SCHEME-.Complete.Booklet.-.September.2018.pdf">Final GLPC Scheme 2018</Link></li>
 				</ul>
 	
 				
