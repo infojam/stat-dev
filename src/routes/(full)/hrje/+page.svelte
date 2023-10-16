@@ -10,13 +10,15 @@
 		Button,
 		Link,
 		Select,
-		SelectItem
+		SelectItem,
+		ButtonSet
 	} from 'carbon-components-svelte';
 	import { sections } from './data.js';
 	import { Tag } from 'carbon-components-svelte';
 	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
 	import ProjectHeader from '../../../components/project_header.svelte';
 	import { fade } from 'svelte/transition';
+	import { Edit } from 'carbon-icons-svelte';
 
 	let currentScore = 0;
 	let  grade = "No Grade";
@@ -326,8 +328,8 @@ if prev score != 0 && current score = 0
 									</Select>
 									<br />
 									<TextArea labelText="Description" value={section.detail_text} readonly/>
-									<div style="display: flex;align-items:right;justify-content:right;padding-top:1rem;">
-										<Button icon={ArrowRight} on:click={() => openNext(i)}>Next</Button>
+									<div style="display: flex;align-items:right;justify-content:right;padding-top:1rem; gap: 10px;">
+										<Button icon={Edit}>Add Comment</Button> <Button icon={ArrowRight} on:click={() => openNext(i)}>Next</Button>
 									</div>
 								</div>
 							</div>  
